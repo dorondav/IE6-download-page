@@ -1,0 +1,243 @@
+/* General Settings */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+/* Header Settings */
+.header {
+    width: 100%;
+}
+
+.section-header {
+    background-color: #3399ff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.section-header .section-header_text {
+    width: 80%;
+    color: white;
+    margin: 10px auto;
+}
+
+.header_page_title {
+    width: 80%;
+    margin: 40px auto 10px auto;
+}
+
+.header_main_header {
+    font-weight: 400;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.header_breadcrumbs {
+    margin: 20px 0;
+    color: #666666;
+    cursor: pointer;
+}
+
+.header_breadcrumbs p span {
+    color: #b8d6ff;
+}
+
+.header_sec_header {
+    font-weight: 200;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+/* container Styling */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.main-section {
+    float: left;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.main-section_presentation {
+    font-weight: 400;
+}
+
+.main-section p {
+    overflow: hidden;
+}
+
+.main-section_titles {
+    margin-top: 25px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #3399ff;
+
+}
+
+.main-section_download-tool {
+    padding: 0 10px;
+}
+
+.main-section_download-tool_box {
+    background-color: #e5e5e5;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-section_download-tool_box .download-btn {
+    background: url('../assets/Untitled-6.png');
+    background-repeat: no-repeat;
+    width: 294px;
+    height: 70px;
+    overflow: visible;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.main-section_download-tool_box table {
+    width: 100%;
+    font-weight: 600;
+}
+
+/* Contact Us Form Style */
+
+.input-style {
+    width: 80%;
+}
+
+.input-group {
+    width: 80%;
+    padding: 0 10px;
+}
+
+label {
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    width: 90px;
+}
+
+#form-btn {
+    float: right;
+    border: none;
+    margin-right: 20%;
+    background-color: #33cc33;
+    padding: 5px 40px;
+    color: white;
+    /* not supported in IE 6 */
+    box-shadow: 0px 5px 2px #e0e0e0;
+
+}
+
+#textarea label {
+    vertical-align: top;
+}
+
+textarea {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.form-actions {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+#asterisk-msg {
+    color: red;
+    font-size: 12px;
+}
+
+/* Sidebar style */
+
+.right-size {
+    float: right;
+    width: 25%;
+    margin-top: 25px;
+
+}
+
+.right-size_panel {
+
+    float: right;
+    background-color: #e5e5e5;
+    padding: 10px;
+}
+
+.right-size_panel table {
+    margin: 0 10px;
+}
+
+.right-size_panel h3 {
+    font-weight: 300;
+    margin: 10px;
+
+}
+
+
+.right-size_panel h5 {
+    font-weight: 600;
+    margin: 10px;
+}
+
+.img-section {
+    width: 100%;
+}
+
+.img-section img {
+    margin: 20px;
+}
+
+.right-size_panel p {
+    margin: 0 10px;
+    width: 200px;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 16%;
+    margin: 15px auto;
+    padding: 5px;
+}
+
+.row {
+    display: block;
+    margin: auto;
+    width: 95%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
