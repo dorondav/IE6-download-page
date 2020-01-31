@@ -16,19 +16,30 @@ window.onload = function () {
         }
         // AddStickySidenav function configurations if addEventListener exists 
         function stickyNavbar() {
+            var browserWidth = document.body.offsetWidth;
             var topScroll = document.documentElement.scrollTop
-            if (topScroll < 1550 && topScroll > 200) {
-                stickyDiv.style.top = topScroll + "px";
-                stickyDiv.style.marginTop = "-190px";
+            if (browserWidth > 860) {
+                if (topScroll < 1550 && topScroll > 200) {
+                    stickyDiv.style.top = topScroll + "px";
+                    stickyDiv.style.marginTop = "-190px";
+                } else {
+                    stickyDiv.style.marginTop = 0;
+                }
             }
         }
         // AddStickySidenav function configurations if addEventListener doesn't exists 
 
         function stickyNavbarIe() {
+            var browserWidth = window.innerWidth;
             var topScroll = document.documentElement.scrollTop
-            if (topScroll < 1550 && topScroll > 300) {
-                stickyDiv.style.top = topScroll + "px";
-                stickyDiv.style.marginTop = "-280px";
+            if (browserWidth > 860) {
+                if (topScroll < 1550 && topScroll > 300) {
+                    stickyDiv.style.top = topScroll + "px";
+                    stickyDiv.style.marginTop = "-280px";
+                }
+            } else {
+                stickyDiv.style.marginTop = 0;
+
             }
         }
     }

@@ -77,6 +77,20 @@ body {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1150px) {
+    .main-section {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 860px),
+screen\9 {
+    .main-section {
+        float: none;
+        width: 100%
+    }
+}
+
 .main-section_presentation {
     font-weight: 400;
 }
@@ -131,6 +145,15 @@ body {
     width: 80%;
 }
 
+
+@media screen and (max-width: 860px),
+screen\9 {
+    .input-style {
+        width: 75%
+    }
+}
+
+
 .input-group {
     width: 80%;
     padding: 0 10px;
@@ -170,8 +193,12 @@ textarea {
     padding: 10px;
 }
 
+.asterisk,
 #asterisk-msg {
     color: red;
+}
+
+#asterisk-msg {
     font-size: 12px;
 }
 
@@ -183,6 +210,20 @@ textarea {
     margin-top: 25px;
 }
 
+@media screen and (max-width: 1150px) {
+    .right-size {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 860px),
+screen\9 {
+    .right-size {
+        float: none;
+        width: 100%;
+    }
+}
+
 .right-size_panel {
     float: right;
     position: relative;
@@ -191,15 +232,28 @@ textarea {
     font-size: 14px;
 }
 
+@media screen and (max-width: 860px),
+screen\9 {
+    .right-size_panel {
+        float: none;
+        width: 100%;
+    }
+}
 
 .right-size_panel table {
     margin: 0 10px;
 }
 
+@media screen and (max-width: 860px),
+screen\9 {
+    .right-size_panel table {
+        width: 45%;
+    }
+}
+
 .right-size_panel h3 {
     font-weight: 300;
     margin: 10px;
-
 }
 
 
@@ -219,8 +273,15 @@ textarea {
 .right-size_panel p {
     margin: 0 10px;
     width: 200px;
-
 }
+
+@media screen and (max-width: 860px),
+screen\9 {
+    .right-size_panel p {
+        width: 100%;
+    }
+}
+
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -234,6 +295,12 @@ textarea {
     display: block;
     margin: auto;
     width: 95%;
+}
+
+@media screen and (max-width: 860px) {
+    .row {
+        width: 50%;
+    }
 }
 
 /* Clear floats after image containers */
