@@ -1,6 +1,6 @@
   <div class="page_summery">
 
-      <h3 class="main-section_presentation" id="test">Summary</h3>
+      <h3 class="main-section_presentation">Summary</h3>
       <p>
           Windows and other critical errors can occur when your Windows operating system becomes corrupted.
           Opening programs will be slower and response times will lag. When you have multiple applications

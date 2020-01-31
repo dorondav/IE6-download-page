@@ -1,4 +1,4 @@
-  <div class="right-size_panel">
+  <div class="right-size_panel" id="sidebar">
       <h3>Repair Windows</h3>
       <table>
           <tr>

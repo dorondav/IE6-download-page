@@ -181,15 +181,16 @@ textarea {
     float: right;
     width: 25%;
     margin-top: 25px;
-
 }
 
 .right-size_panel {
-
     float: right;
+    position: relative;
     background-color: #e5e5e5;
     padding: 10px;
+    font-size: 14px;
 }
+
 
 .right-size_panel table {
     margin: 0 10px;
