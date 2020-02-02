@@ -15,11 +15,9 @@
             <td>6MB</td>
         </tr>
     </table>
-
     <div class="img-section">
         <img src="./assets/preview.png" alt="program mene screen">
     </div>
-
     <h5>Windows Operating Systems:
     </h5>
     <p>Compatible with Windows XP, Vista, Windows 7 (32 and 64 bit), Windows 8 & 8.1 (32 and 64 bit).
@@ -27,7 +25,6 @@
     <h5>Minimum Requirements:</h5>
     <p>Internet connection. 20 MB free hard disk space. Logged on as administrator
     </p>
-
     <!-- Windows Logos -->
     <div id="row">
         <div class="column">

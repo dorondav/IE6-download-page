@@ -2,9 +2,8 @@
        <p>Recommended: In order to repair your system and Windows, download and use the Reimage below. This
            repair tool will locate, identify, and fix Windows errors. Your computer should also run faster and
            smoother after using this software.</p>
-
        <div class="main-section_download-tool_box">
-           <input type="button" class="download-btn">
+           <img src="./assets/Untitled-6.png" class="download-btn" onclick="elementClicked()" alt="Download Button">
            <table>
                <tr>
                    <td>File</td>
@@ -25,10 +24,7 @@
                </tr>
            </table>
        </div>
-
-
        <p>
-
            There are many reasons why Windows errors happen, including having malware, spyware, or programs not
            installing properly. You can have all kinds of system conflicts, registry errors, and Active X
            errors. Reimage specializes in Windows repair. It scans and diagnoses, then repairs, your damaged PC
@@ -63,9 +59,8 @@
    </div>
    <h3 class="main-section_titles">
        How to easily fix Windows error? </h3>
-
    <ol>
-       <li><a href="">Download (Windows) repair. </a></li>
+       <li><a onclick="elementClicked()" href="">Download (Windows) repair. </a></li>
        <li>install program and click Scan button.</li>
        <li>Click the Fix Errors button when scan is completed.</li>
        <li>Restart your computer.</li>

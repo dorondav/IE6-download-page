@@ -1,5 +1,4 @@
   <div class="page_summery">
-
       <h3 class="main-section_presentation">Summary</h3>
       <p>
           Windows and other critical errors can occur when your Windows operating system becomes corrupted.
@@ -14,7 +13,8 @@
       <p>
           You can dramatically improve the speed of your machine when you address all the problems just
           mentioned.
-          In order to fix your errors and improve the speed of your PC, it is recommended that you <a href="">download
+          In order to fix your errors and improve the speed of your PC, it is recommended that you <a
+              onclick="elementClicked()" href="">download
               the
               'Windows Repair Tool'</a>. This is an advanced optimization tool that can repair all the
           problems

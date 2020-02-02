@@ -118,8 +118,8 @@ body {
 }
 
 .main-section_download-tool_box .download-btn {
-    background: url('../assets/Untitled-6.png');
-    background-repeat: no-repeat;
+    /* background: url('../assets/Untitled-6.png'); */
+    /* background-repeat: no-repeat; */
     width: 294px;
     height: 70px;
     overflow: visible;

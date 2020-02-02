@@ -1,59 +1,66 @@
 
 window.onload = function () {
     // ==Events==
-
     // Activate sticky sidenav  
     addStickySidenav();
     // Add responsive classes for IE
     responsiveViewIe();
+    // Submit form to index
     formSubmission();
+
+
     // ==Methods==
-
     function formSubmission() {
-
         var submit = document.getElementById("form-btn");
-
 
         if (submit.addEventListener) {
             submit.addEventListener("click", formValidations, false);
         } else {
             submit.attachEvent("onclick", formValidations);
         }
-
     }
-    function formValidations(event) {
-        var isIE = /*@cc_on!@*/false || !!document.documentMode;
 
+    function formValidations(event) {
+        // Validation Business side 
         var name = document.getElementById('name').value;
         var message = document.getElementById('message').value;
         var email = document.getElementById('email').value;
         var errorMsg = document.getElementById('asterisk-msg');
         var formData = document.getElementById('formData');
-
-        // var formData = null;
-
-        // Email Regex
+        // Email structure Regex 
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        //   Preventing HTML and Script injections
+        name = name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        email = email.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        // Stop php form from submitting
         if (event.preventDefault) { event.preventDefault() };
         if (window.event) { window.event.returnValue = false; }
 
+        // If Empty
         if (name == "" || email == "" || message == "") {
             return errorMsg.innerText = '*Mandatory Fields';
 
         } else {
-
+            // Inputs length
             if (name.length < 3) {
-                return errorMsg.innerText = 'Name to Short. Name must have more then 2 characters';
+                return errorMsg.innerText = 'Name too Short. Name must have more then 2 characters';
             }
             if (message.length < 9) {
-                return errorMsg.innerHTML = 'Message To Short. Message must have more then 10 characters';
+                return errorMsg.innerHTML = 'Message too Short. Message must have more then 10 characters';
             }
+
+            if (message.length > 150) {
+                return errorMsg.innerHTML = 'Message too long. Message must have less then 150 characters';
+            }
+            // Apply Email Regex to value 
             if (!re.test(email.toLowerCase())) {
                 return errorMsg.innerHTML = 'Email is invalid';
             }
-
+            // return Value and display it on the screen
             return formData.innerHTML = " <h3 class=\"main-section_titles\" >Form Information</h3><table id=\"formData-table\"><tr><td>Name:</td><td>" + name + "</td></tr ><tr><td>Email: </td><td> " + email + " </td> </tr><tr><td>Message: </td><td>" + message + "</td> </tr><\/table >";
-            // return formData.innerHTML '<div> '
+
         }
     }
 
@@ -114,8 +121,9 @@ window.onload = function () {
                 }
             }
         }
-        // AddStickySidenav function configurations if addEventListener doesn't exists 
 
+
+        // AddStickySidenav function configurations for internet explorer 
         function stickyNavbarIe() {
             var browserWidth = document.body.offsetWidth;
             var topScroll = document.documentElement.scrollTop;
@@ -126,9 +134,23 @@ window.onload = function () {
                 }
             } else {
                 stickyDiv.style.marginTop = 0;
-
             }
         }
     }
 
+}
+
+function elementClicked() {
+    // alert("Button not really active");
+
+    if (document.addEventListener) {
+        document.addEventListener("click", elementClickedMsg, false);
+    } else {
+        document.attachEvent("onclick", elementClickedMsg);
+    }
+
+}
+
+function elementClickedMsg() {
+    alert("Button not really active");
 }

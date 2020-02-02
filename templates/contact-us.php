@@ -3,7 +3,6 @@
         <label for="name">Name:<span class="asterisk">*</span></label>
         <input type="text" name="name" class="input-style" id="name">
     </div>
-
     <div class="input-group">
         <label for="email">Email:<span class="asterisk">*</span></label>
         <input type="text" email="email" class="input-style" id="email">
