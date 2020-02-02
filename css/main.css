@@ -71,21 +71,20 @@ body {
 }
 
 
-.main-section {
+#main-section {
     float: left;
     width: 70%;
     margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1150px) {
-    .main-section {
+    #main-section {
         width: 60%;
     }
 }
 
-@media screen and (max-width: 860px),
-screen\9 {
-    .main-section {
+@media screen and (max-width: 860px) {
+    #main-section {
         float: none;
         width: 100%
     }
@@ -95,7 +94,7 @@ screen\9 {
     font-weight: 400;
 }
 
-.main-section p {
+#main-section p {
     overflow: hidden;
 }
 
@@ -146,8 +145,7 @@ screen\9 {
 }
 
 
-@media screen and (max-width: 860px),
-screen\9 {
+@media screen and (max-width: 860px) {
     .input-style {
         width: 75%
     }
@@ -204,27 +202,26 @@ textarea {
 
 /* Sidebar style */
 
-.right-size {
+#right-size {
     float: right;
     width: 25%;
     margin-top: 25px;
 }
 
 @media screen and (max-width: 1150px) {
-    .right-size {
+    #right-size {
         width: 10%;
     }
 }
 
-@media screen and (max-width: 860px),
-screen\9 {
-    .right-size {
+@media screen and (max-width: 860px) {
+    #right-size {
         float: none;
         width: 100%;
     }
 }
 
-.right-size_panel {
+#sidebar {
     float: right;
     position: relative;
     background-color: #e5e5e5;
@@ -232,32 +229,30 @@ screen\9 {
     font-size: 14px;
 }
 
-@media screen and (max-width: 860px),
-screen\9 {
-    .right-size_panel {
+@media screen and (max-width: 860px) {
+    #sidebar {
         float: none;
         width: 100%;
     }
 }
 
-.right-size_panel table {
+#sidebar table {
     margin: 0 10px;
 }
 
-@media screen and (max-width: 860px),
-screen\9 {
-    .right-size_panel table {
+@media screen and (max-width: 860px) {
+    #sidebar table {
         width: 45%;
     }
 }
 
-.right-size_panel h3 {
+#sidebar h3 {
     font-weight: 300;
     margin: 10px;
 }
 
 
-.right-size_panel h5 {
+#sidebar h5 {
     font-weight: 600;
     margin: 10px;
 }
@@ -270,14 +265,13 @@ screen\9 {
     margin: 20px;
 }
 
-.right-size_panel p {
+#sidebar p {
     margin: 0 10px;
     width: 200px;
 }
 
-@media screen and (max-width: 860px),
-screen\9 {
-    .right-size_panel p {
+@media screen and (max-width: 860px) {
+    #sidebar p {
         width: 100%;
     }
 }
@@ -291,21 +285,45 @@ screen\9 {
     padding: 5px;
 }
 
-.row {
+#row {
     display: block;
     margin: auto;
     width: 95%;
 }
 
 @media screen and (max-width: 860px) {
-    .row {
+    #row {
         width: 50%;
     }
 }
 
 /* Clear floats after image containers */
-.row::after {
+#row::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.picWindow {
+    background: powderblue;
+}
+
+/* Form Data table CSS */
+
+#formData {
+    width: 100%;
+}
+
+#formData table {
+    margin: 10px auto;
+    width: 80%;
+    /* margin: 10px auto; */
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e5e5e5;
+
+}
+
+#formData table tr td {
+    padding: 10px;
 }

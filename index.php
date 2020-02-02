@@ -7,7 +7,7 @@
 </div>
 
 <div class="container">
-    <div class="main-section">
+    <div id="main-section">
         <!-- Add the Page Summery -->
         <?php require_once('./templates/page-summery.php'); ?>
 
@@ -23,9 +23,18 @@
         <!-- Add the Contact Us Form  -->
         <?php require_once('./templates/contact-us.php'); ?>
 
+
+        <div id="formData">
+
+
+        </div>
+
+
+
+
     </div>
 
-    <div class="right-size">
+    <div id="right-size">
         <!-- Add Sidebar -->
         <?php require_once('./templates/sidebar.php'); ?>
     </div>

@@ -1,0 +1,21 @@
+    .main-section_resp-class {
+        width: 100% !important;
+    }
+
+    .right-size_resp-class {
+        width: 100% !important;
+        float: none;
+    }
+
+    .sidebar_resp-class {
+        width: 100% !important;
+        float: none;
+    }
+
+    .sidebar_table_resp-class {
+        width: 100% !important;
+    }
+
+    .row_resp-class {
+        width: 35% !important;
+    }
